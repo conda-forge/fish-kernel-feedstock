@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "1.0.0"
+  version: "1.1.0"
 
 package:
   name: fish-kernel
@@ -9,10 +9,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/f/fish-kernel/fish_kernel-${{ version }}.tar.gz
-  sha256: f2ac837c733cb0be8e78ac35be12f0344939b056eb54443ff400b84feb7f7ab1
+  sha256: 4bf9aa425cb679833a5648eba0539bf73b44fe82798f66d7f776ff8dd3b59051
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   python:
